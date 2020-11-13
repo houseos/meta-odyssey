@@ -1,0 +1,35 @@
+# meta-odyssey
+# meta-odyssey-kas.yml
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2020 Benjamin Schilling
+
+
+header:
+  version: 8
+  includes:
+    - repo: cip-core
+      file: kas-cip.yml
+    - repo: cip-core
+      file: kas/opt/ebg-swu.yml
+
+machine: seeed-odyssey
+target: odyssey-image
+distro: cip-core-buster
+
+repos:
+  meta-odyssey:
+
+  cip-core:
+    url: https://gitlab.com/cip-project/cip-core/isar-cip-core.git
+    refspec: 162be0421d8f27072b2476f95c6d2df9aa09b5f6
+    
+bblayers_conf_header:
+  standard: |
+    LCONF_VERSION = "6"
+    BBPATH = "${TOPDIR}"
+    BBFILES ?= ""
+
+local_conf_header:
+  standard: |
+    CONF_VERSION = "1"
+    PARALLEL_MAKE = "-j 4"
