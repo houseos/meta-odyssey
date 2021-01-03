@@ -5,7 +5,7 @@ daemon:
 directories:
   data: /opt/arduino-cli
   downloads: /opt/arduino-cli/staging
-  user: /home/dev/Arduino
+  user: /home/arduino/arduino
 logging:
   file: ""
   format: text

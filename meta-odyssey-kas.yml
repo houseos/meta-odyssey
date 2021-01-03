@@ -33,3 +33,8 @@ local_conf_header:
   standard: |
     CONF_VERSION = "1"
     PARALLEL_MAKE = "-j 4"
+  users: |
+    USERS += "arduino"
+    USER_arduino[home] = "/home/arduino"
+    USER_arduino[comment] = "arduino-cli user"
+    USER_arduino[flags] = "system create-home"
