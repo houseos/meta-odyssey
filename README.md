@@ -43,3 +43,11 @@ First export the absolute path to the build directory for the **HouseOS Central 
 The target image will be available here:
 
 `<KAS_WORK_DIR>/build/tmp/deploy/images/seeed-odyssey/odyssey-image-debian-buster-lab-seeed-odyssey.wic.img`
+
+## License
+
+SPDX-License-Identifier: MIT
+
+## Copyright 
+
+Copyright (C) 2020 Benjamin Schilling

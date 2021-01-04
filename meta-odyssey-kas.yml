@@ -1,8 +1,7 @@
 # meta-odyssey
 # meta-odyssey-kas.yml
 # SPDX-License-Identifier: MIT
-# Copyright (C) 2020 Benjamin Schilling
-
+# Copyright (C) 2020-2021 Benjamin Schilling
 
 header:
   version: 8
