@@ -5,8 +5,12 @@
 
 include ebg-sysparts.inc
 
+# Rootfs partitions
 part --source rootfs --uuid "fedcba98-7654-3210-cafe-5e0710000001" --size 1000M   --extra-space 128M --overhead-factor 1 --label systema --align 1024 --fstype=ext4
 part  --source rootfs --uuid "fedcba98-7654-3210-cafe-5e0710000002" --size 1000M   --extra-space 128M --overhead-factor 1 --label systemb --align 1024 --fstype=ext4
+
+# Persistent data partition
+part data --ondisk sda --fstype=ext4 --label data --align 1024 --size 2000M
 
 # Disable kernel command line, because it somehow does not finish booting with it enabled and it is not needed for now
 bootloader --ptable gpt --append="rootwait earlyprintk"
