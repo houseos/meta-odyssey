@@ -7,3 +7,5 @@ buildInstaller.sh
 copy.sh
 isar/
 kas-docker
+cip-core/
+kas-container
