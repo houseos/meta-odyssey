@@ -4,7 +4,7 @@
 # Copyright (C) 2020-2021 Benjamin Schilling
 
 header:
-  version: 8
+  version: 10
   includes:
     - repo: cip-core
       file: kas-cip.yml
@@ -20,7 +20,7 @@ repos:
 
   cip-core:
     url: https://gitlab.com/cip-project/cip-core/isar-cip-core.git
-    refspec: 162be0421d8f27072b2476f95c6d2df9aa09b5f6
+    refspec: 9e4580ffc15fb7d2a4d1e8cf5fd50e58095dd90d
     
 bblayers_conf_header:
   standard: |

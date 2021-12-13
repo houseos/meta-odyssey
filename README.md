@@ -18,9 +18,9 @@ Feature Matrix:
 
 | Feature      | Status |
 | ------------ | ------ |
-| Linux Kernel |        |
-| efibootguard |        |
-| SWUpdate     |        |
+| Linux Kernel | x      |
+| efibootguard | x      |
+| SWUpdate     | x      |
 | Co-processor |        |
 
 
@@ -30,15 +30,15 @@ First create two directories for the build, one for each image.
 
 Second download the `kas-docker` script:
 
-`wget https://raw.githubusercontent.com/siemens/kas/master/kas-docker`
+`wget https://raw.githubusercontent.com/siemens/kas/master/kas-container`
 
-`chmod a+x kas-docker`
+`chmod a+x kas-container`
 
 ### Build the target image
 
 First export the absolute path to the build directory for the **HouseOS Central Service Unit** image as the `KAS_WORK_DIR` environment variable.
 
-`./kas-docker --isar build meta-odyssey-kas.yml`
+`./kas-container --isar build meta-odyssey-kas.yml`
 
 The target image will be available here:
 
@@ -50,4 +50,4 @@ SPDX-License-Identifier: MIT
 
 ## Copyright 
 
-Copyright (C) 2020 Benjamin Schilling
+Copyright (C) 2020-2021 Benjamin Schilling
